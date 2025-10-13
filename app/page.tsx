@@ -318,12 +318,12 @@ export default function Page() {
 						</div>
 
 						<Card className="overflow-hidden">
-							<CardContent className="p-0">
+							<CardContent className="relative p-0 h-80 md:h-auto aspect-[10/10]">
 								<Image
 									alt="Developer workspace with code and design elements"
-									className="h-full w-full object-cover"
+									className="object-cover"
 									fill
-									src="/developer-workspace-hero-image.jpg"
+									src="/self.png"
 								/>
 							</CardContent>
 						</Card>
@@ -352,21 +352,24 @@ export default function Page() {
 										instincts
 									</CardTitle>
 									<CardDescription>
-										I bridge engineering and design to
-										deliver delightful, pragmatic solutions.
+										I bridge design and engineering to turn
+										early ideas into scalable, market-ready
+										products. My work blends thoughtful UX,
+										robust architecture, and pragmatic
+										execution.
 									</CardDescription>
 								</CardHeader>
 								<CardContent className="space-y-4 leading-relaxed text-muted-foreground">
 									<p>
-										Over the past years, I’ve partnered with
-										startups and teams to ship end-to-end
-										features—from discovery and prototyping
-										to high-quality implementation,
-										documentation, and iteration.
+										I collaborate with startups and teams to
+										design, build, and scale complete
+										products, from idea validation and UX
+										design to implementation, documentation,
+										and continuous improvement.
 									</p>
 									<p>
 										I care deeply about accessibility,
-										performance budgets, and clean
+										performance, budgets, and clean
 										architecture. My approach emphasizes
 										clarity, maintainability, and measurable
 										impact.
@@ -375,9 +378,10 @@ export default function Page() {
 										{[
 											"Accessibility",
 											"Performance",
-											"DX",
-											"Testing",
-											"Animations",
+											"Scalability",
+											"Design Systems",
+											"Developer Experience",
+											"Product Architecture",
 										].map((item) => (
 											<Badge
 												key={item}
@@ -410,23 +414,36 @@ export default function Page() {
 						<div className="md:col-span-2 space-y-4">
 							{[
 								{
-									role: "Senior Frontend Engineer",
-									company: "Acme Corp",
-									period: "2023 — Present",
+									role: "Full Stack Software Engineer",
+									company: "Assersoft",
+									period: "Jan 2025 — Present",
 									points: [
-										"Led migration to Next.js App Router, improving TTI by 34%.",
-										"Built design system components with shadcn/ui for faster delivery.",
-										"Collaborated with design/product to deliver 0→1 features.",
+										"Developed a full-fledged ERP system for tailoring businesses with Next.js, HeroUI, Supabase, and modern design system components, integrating stock, orders, and ledger management.",
+										"Designed and implemented a Laboratory Management Software from scratch, handling patient records, tests, and reporting workflows.",
+										"Led architectural improvements including Next.js App Router migration and reusable component library with shadcn/ui for faster feature delivery.",
+										"Collaborated with product and design teams to deliver end-to-end features from 0→1, emphasizing scalability, performance, and maintainability.",
+										"Converted the Audiogram app into a multi-tenant SaaS platform, enabling scalable use across multiple clients.",
 									],
 								},
 								{
-									role: "Full‑Stack Developer",
-									company: "Startup XYZ",
-									period: "2021 — 2023",
+									role: "Software Engineer Intern",
+									company: "MaqMinds",
+									period: "Feb 2025 — May 2025",
 									points: [
-										"Implemented end-to-end features in TypeScript (API + UI).",
-										"Introduced testing and CI checks, reducing regressions.",
-										"Optimized critical flows for accessibility and performance.",
+										"Integrated Supabase with Retool to build dashboards and user forms for a real-world Anti-Money Laundering system.",
+										"Gained hands-on experience with JavaScript, Retool, and libraries like Lodash and Moment for efficient data handling.",
+										"Learned production-grade system design and optimization under mentorship from a senior engineer with 10+ years of industry experience.",
+									],
+								},
+								{
+									role: "Software Engineer Intern",
+									company: "Assersoft",
+									period: "Aug 2024 - Dec 2024",
+									points: [
+										"Built an advanced Audiogram app with Pure Tone, Speech, and Tympanogram modules to streamline audiological testing and analysis.",
+										"Developed intuitive React + Tailwind interfaces for data input, visualization, and report generation.",
+										"Engineered secure, real-time APIs with Node.js (Express) and MySQL for reliable test processing and storage.",
+										"Collaborated with audiologists to translate clinical workflows into scalable, user-friendly software.",
 									],
 								},
 							].map((job) => (
@@ -480,52 +497,79 @@ export default function Page() {
 						<div className="grid gap-6 md:grid-cols-2">
 							{[
 								{
-									title: "Analytics Dashboard",
-									desc: "Modular analytics app with theming, charts, and real-time data.",
-									tags: ["Next.js", "Recharts", "SWR"],
-									image: "/analytics-dashboard-ui.png",
-									link: "#",
+									title: "Menu360",
+									desc: "Menu360 is an interactive digital menu platform featuring 3D models and AR experiences to enhance restaurant ordering and customer engagement.",
+									tags: [
+										"Next.js",
+										"Typescript",
+										"Supabase",
+										"Aceternity UI",
+										"Three.js",
+									],
+									image: "/menu360.png",
+									link: "https://menu360.com/demo",
 								},
 								{
-									title: "E‑commerce UI",
-									desc: "Accessible storefront with filters, product cards, and checkout.",
+									title: "Tailoring ERP",
+									desc: `A full-featured ERP system for tailoring businesses, managing orders, stock, customers, and finances in a single scalable platform.
+									username: master
+									password: master123`,
 									tags: [
 										"Next.js",
 										"TypeScript",
-										"shadcn/ui",
+										"Hero UI",
+										"Supabase",
 									],
-									image: "/ecommerce-product-grid.png",
-									link: "#",
+									image: "/tailoring.png",
+									link: "https://teejays.vercel.app",
 								},
 								{
-									title: "Docs Platform",
-									desc: "MDX docs with full-text search, code blocks, and dark mode.",
-									tags: ["MDX", "Next.js", "Tailwind"],
-									image: "/documentation-site-ui.jpg",
-									link: "#",
+									title: "Learn Quran Global",
+									desc: "Redesigned and optimized business website and reduced loading time significantly.",
+									tags: ["Laravel", "Bootstrap", "MySQL"],
+									image: "/learn-quran-global.png",
+									link: "https://learnquranglobal.org",
 								},
 								{
-									title: "Marketing Site",
-									desc: "SEO‑friendly site with a/b tested hero and high conversion.",
+									title: "Laboratory Management Software",
+									desc: "A comprehensive laboratory management system streamlining patient records, test workflows, and reporting for efficient diagnostics.",
 									tags: [
-										"Next.js",
-										"A/B testing",
-										"Accessibility",
+										"React.js",
+										"Daisy UI",
+										"JsPDF",
+										"Codeignitor",
+										"MySQL",
 									],
-									image: "/marketing-landing-page.jpg",
-									link: "#",
+									image: "/laboratory.png",
+									link: "https://nationallab.assersoft.com",
+								},
+								{
+									title: "Audiogram Management Software",
+									desc: `An advanced audiogram application for seamless audiological testing, speech analysis, tympanogram assessments, and professional report generation.
+									username: 5_master
+									password: master12`,
+									tags: [
+										"React.js",
+										"Daisy UI",
+										"JsPDF",
+										"Codeignitor",
+										"MySQL",
+									],
+									image: "/audiogram.png",
+									link: "https://audiogram.assersoft.com",
 								},
 							].map((p) => (
 								<Card
 									key={p.title}
-									className="overflow-hidden flex flex-col"
+									className="overflow-hidden flex flex-col pt-0"
 								>
-									<div className="aspect-[16/10] w-full overflow-hidden bg-muted">
+									<div className="relative w-full aspect-[16/10] overflow-hidden bg-muted leading-none">
 										<Image
 											alt={p.title}
-											className="h-full w-full object-cover"
-											fill
 											src={p.image || "/placeholder.svg"}
+											fill
+											className="object-cover block"
+											sizes="100vw"
 										/>
 									</div>
 									<CardHeader className="pb-2">
@@ -662,7 +706,7 @@ function ContactForm() {
 			`Portfolio inquiry from ${name || "your website"}`,
 		);
 		const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-		return `mailto:you@example.com?subject=${subject}&body=${body}`;
+		return `mailto:abdullah.nazir289@gmail.com?subject=${subject}&body=${body}`;
 	}, [name, email, message]);
 
 	return (
